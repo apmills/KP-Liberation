@@ -44,34 +44,34 @@ KP_liberation_fuel_crate = "CargoNet_01_barrels_F";                     // This 
     IMPORTANT: The last element inside each array must have no comma at the end!
 */
 infantry_units = [
-    ["CUP_B_BAF_Soldier_RiflemanLite_DDPM",15,0,0],                     // Rifleman (Light)
-    ["CUP_B_BAF_Soldier_Rifleman_DDPM",20,0,0],                         // Rifleman
-    ["CUP_B_BAF_Soldier_RiflemanAT_DDPM",30,0,0],                       // Rifleman (AT)
-    ["CUP_B_BAF_Soldier_Grenadier_DDPM",25,0,0],                        // Grenadier
-    ["CUP_B_BAF_Soldier_AutoRifleman_DDPM",25,0,0],                     // Autorifleman
-    ["CUP_B_BAF_Soldier_HeavyGunner_DDPM",35,0,0],                      // Heavygunner
-    ["CUP_B_BAF_Soldier_Marksman_DDPM",30,0,0],                         // Marksman
-    ["CUP_B_BAF_Soldier_SharpShooter_DDPM",40,0,0],                     // Sharpshooter
-    ["CUP_B_BAF_Soldier_AT_DDPM",50,10,0],                              // AT Specialist
-    ["CUP_B_BAF_Soldier_AA_DDPM",50,10,0],                              // AA Specialist
-    ["CUP_B_BAF_Soldier_Medic_DDPM",30,0,0],                            // Combat Life Saver
-    ["CUP_B_BAF_Soldier_Engineer_DDPM",30,0,0],                         // Engineer
-    ["CUP_B_BAF_Soldier_Explosive_DDPM",30,0,0],                        // Explosives Specialist
-    ["CUP_B_BAF_Soldier_Rifleman_MTP",20,0,0],                          // Recon Scout
-    ["CUP_B_BAF_Soldier_RiflemanAT_MTP",30,0,0],                        // Recon Scout (AT)
-    ["CUP_B_BAF_Soldier_Marksman_MTP",30,0,0],                          // Recon Marksman
-    ["CUP_B_BAF_Soldier_SharpShooter_MTP",40,0,0],                      // Recon Sharpshooter
-    ["CUP_B_BAF_Soldier_Medic_MTP",30,0,0],                             // Recon Paramedic
-    ["CUP_B_BAF_Soldier_Explosive_MTP",30,0,0],                         // Recon Demolition Expert
-    ["CUP_B_BAF_Sniper_AS50_TWS_DDPM",70,5,0],                          // Sniper
-    ["CUP_B_BAF_Sniper_AS50_DDPM",70,5,0],                              // Sniper (Arid)
-    ["CUP_B_BAF_Sniper_DDPM",70,5,0],                                   // Sniper (Lush)
-    ["CUP_B_BAF_Spotter_DDPM",20,0,0],                                  // Spotter
-    ["CUP_B_BAF_Soldier_Crew_DDPM",10,0,0],                             // Crewman
-    ["CUP_B_BAF_Soldier_Paratrooper_DDPM",20,0,0],                      // Para Trooper
-    ["CUP_B_BAF_Soldier_Helicrew_DDPM",10,0,0],                         // Helicopter Crew
-    ["CUP_B_BAF_Soldier_Helipilot_DDPM",10,0,0],                        // Helicopter Pilot
-    ["CUP_B_BAF_Soldier_Pilot_DDPM",10,0,0]                             // Pilot
+    ["CUP_B_BAF_Soldier_RiflemanLite_DDPM",0,0,0],                     // Rifleman (Light)
+    ["CUP_B_BAF_Soldier_Rifleman_DDPM",0,0,0],                         // Rifleman
+    ["CUP_B_BAF_Soldier_RiflemanAT_DDPM",0,0,0],                       // Rifleman (AT)
+    ["CUP_B_BAF_Soldier_Grenadier_DDPM",0,0,0],                        // Grenadier
+    ["CUP_B_BAF_Soldier_AutoRifleman_DDPM",0,0,0],                     // Autorifleman
+    ["CUP_B_BAF_Soldier_HeavyGunner_DDPM",0,0,0],                      // Heavygunner
+    ["CUP_B_BAF_Soldier_Marksman_DDPM",0,0,0],                         // Marksman
+    ["CUP_B_BAF_Soldier_SharpShooter_DDPM",0,0,0],                     // Sharpshooter
+    ["CUP_B_BAF_Soldier_AT_DDPM",0,10,0],                              // AT Specialist
+    ["CUP_B_BAF_Soldier_AA_DDPM",0,10,0],                              // AA Specialist
+    ["CUP_B_BAF_Soldier_Medic_DDPM",0,0,0],                            // Combat Life Saver
+    ["CUP_B_BAF_Soldier_Engineer_DDPM",0,0,0],                         // Engineer
+    ["CUP_B_BAF_Soldier_Explosive_DDPM",0,0,0],                        // Explosives Specialist
+    ["CUP_B_BAF_Soldier_Rifleman_MTP",0,0,0],                          // Recon Scout
+    ["CUP_B_BAF_Soldier_RiflemanAT_MTP",0,0,0],                        // Recon Scout (AT)
+    ["CUP_B_BAF_Soldier_Marksman_MTP",0,0,0],                          // Recon Marksman
+    ["CUP_B_BAF_Soldier_SharpShooter_MTP",0,0,0],                      // Recon Sharpshooter
+    ["CUP_B_BAF_Soldier_Medic_MTP",0,0,0],                             // Recon Paramedic
+    ["CUP_B_BAF_Soldier_Explosive_MTP",0,0,0],                         // Recon Demolition Expert
+    ["CUP_B_BAF_Sniper_AS50_TWS_DDPM",0,5,0],                          // Sniper
+    ["CUP_B_BAF_Sniper_AS50_DDPM",0,5,0],                              // Sniper (Arid)
+    ["CUP_B_BAF_Sniper_DDPM",0,5,0],                                   // Sniper (Lush)
+    ["CUP_B_BAF_Spotter_DDPM",0,0,0],                                  // Spotter
+    ["CUP_B_BAF_Soldier_Crew_DDPM",0,0,0],                             // Crewman
+    ["CUP_B_BAF_Soldier_Paratrooper_DDPM",0,0,0],                      // Para Trooper
+    ["CUP_B_BAF_Soldier_Helicrew_DDPM",0,0,0],                         // Helicopter Crew
+    ["CUP_B_BAF_Soldier_Helipilot_DDPM",0,0,0],                        // Helicopter Pilot
+    ["CUP_B_BAF_Soldier_Pilot_DDPM",0,0,0]                             // Pilot
 ];
 
 light_vehicles = [
@@ -121,7 +121,8 @@ static_vehicles = [
     ["CUP_WV_B_SS_Launcher",750,500,0],                                 // Mk-29 GMLS
     ["CUP_WV_B_RAM_Launcher",750,750,0],                                // Mk-49 GMLS
     ["B_Mortar_01_F",80,150,0],                                         // Mk6 Mortar
-    ["CUP_B_L16A2_BAF_DDPM",80,150,0]                                   // L16A2 81mm Mortar
+    ["CUP_B_L16A2_BAF_DDPM",80,150,0],                                  // L16A2 81mm Mortar
+		["CUP_B_M119_US",100,200,0]                                         // M119
 ];
 
 buildings = [
@@ -329,5 +330,6 @@ elite_vehicles = [
     "CUP_B_F35B_Stealth_BAF",                                           // F-35B Lightning II (Stealth)
     "CUP_WV_B_CRAM",                                                    // C-RAM
     "CUP_WV_B_SS_Launcher",                                             // Mk-29 GMLS
-    "CUP_WV_B_RAM_Launcher"                                             // Mk-49 GMLS
+    "CUP_WV_B_RAM_Launcher",                                            // Mk-49 GMLS
+		"CUP_B_M119_US"                                                     // M119
 ];
