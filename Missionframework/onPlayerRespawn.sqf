@@ -18,6 +18,8 @@ if (isNil "GRLIB_respawn_loadout") then {
     sleep 4;
     [player, GRLIB_respawn_loadout] call KPLIB_fnc_setLoadout;
 };
+// Become French
+player setSpeaker "male01fre";
 
 [] call KPLIB_fnc_addActionsPlayer;
 

@@ -119,11 +119,15 @@ KPLIB_objectInits = [
     ],
 
     // Disable autocombat (if set in parameters) and fleeing
+    // Add AIS to our guys
     [
         ["Man"],
         {
-            if (!(GRLIB_autodanger) && {(side _this) isEqualTo GRLIB_side_friendly}) then {
-                _this disableAI "AUTOCOMBAT";
+            if ((side _this) isEqualTo GRLIB_side_friendly) then {
+                if (!(GRLIB_autodanger)) then {
+                    _this disableAI "AUTOCOMBAT";
+                };
+                [_this] call AIS_System_fnc_loadAIS;
             };
             _this allowFleeing 0;
         },

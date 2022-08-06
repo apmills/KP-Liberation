@@ -1,5 +1,5 @@
 /*
-    Swedish Forces Pack Arsenal Preset
+    United Nations Preset
     Last Update: 2020-05-03
 
     Needed:
@@ -167,7 +167,7 @@ GRLIB_arsenal_magazines = [
 
 GRLIB_arsenal_items = [
     // Uniforms
-    "sfp_drysuit",                                                  // Dry Suit
+    "UK3CB_UN_B_U_CombatUniform_TTSKO",                                                  // Dry Suit
     "sfp_ghillie_desert_uniform",                                   // Ghillie suit (Desert)
     "sfp_ghillie_uniform",                                          // Ghillie suit
     "sfp_m58w_uniform_alt1",                                        // m58 Field uniform (Alternative)
@@ -299,14 +299,14 @@ GRLIB_arsenal_items = [
     "sfp_skyddsmask90",                                             // Gas mask
 
     // Vests
-    "sfp_kroppskydd94_crew",                                        // Kroppsskydd 94 (Crew)
-    "sfp_kroppskydd94_rifle1",                                      // Kroppsskydd 94 (Rifle1)
-    "sfp_kroppskydd94_sv2k_rifle1_diaper",                          // Kroppsskydd 94 Sv2k (Rifle1 Groin)
-    "sfp_kroppskydd94_sv2k_rifle1",                                 // Kroppsskydd 94 Sv2k (Rifle1)
-    "sfp_kroppsskydd12_crew",                                       // Kroppsskydd 12 (Crew)
-    "sfp_kroppsskydd12_gl",                                         // Kroppsskydd 12 (GL)
-    "sfp_kroppsskydd12_holster",                                    // Kroppsskydd 12 (Holster)
-    "sfp_kroppsskydd12_medic",                                      // Kroppsskydd 12 (Medic)
+    "UK3CB_UN_B_V_6b23_ml_02",                                        // Kroppsskydd 94 (Crew)
+    "UK3CB_UN_B_V_6b23_ML_6sh92_radio",                                      // Kroppsskydd 94 (Rifle1)
+    "UK3CB_UN_B_V_6b23_ml_6sh92_vog",                          // Kroppsskydd 94 Sv2k (Rifle1 Groin)
+    "UK3CB_UN_B_V_6b23_ml_crewofficer",                                 // Kroppsskydd 94 Sv2k (Rifle1)
+    "UK3CB_UN_B_V_6b23_ml_crew",                                       // Kroppsskydd 12 (Crew)
+    "UK3CB_UN_B_V_6b23_ml_engineer",                                         // Kroppsskydd 12 (GL)
+    "UK3CB_UN_B_V_6b23_medic",                                    // Kroppsskydd 12 (Holster)
+    "UK3CB_UN_B_V_6b23_ml_01",                                      // Kroppsskydd 12 (Medic)
     "sfp_kroppsskydd12_mg",                                         // Kroppsskydd 12 (MG)
     "sfp_kroppsskydd12_tl",                                         // Kroppsskydd 12 (Teamleader)
     "sfp_kroppsskydd12",                                            // Kroppsskydd 12
@@ -477,7 +477,7 @@ GRLIB_arsenal_items = [
 ];
 
 GRLIB_arsenal_backpacks = [
-    "sfp_backpack_grg_loader",                                      // GRG Loader (Backpack)
+    "UK3CB_UN_B_B_RPG",                                      // GRG Loader (Backpack)
     "sfp_backpack_lk35",                                            // LK 35
     "sfp_backpack_sjvv9",                                           // Medic Bag
     "sfp_backpack_stridssack08",                                    // Combatbag 08

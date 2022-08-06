@@ -46,7 +46,7 @@
 <Project name="Liberation">
     <Package name="Liberation">
         <Key ID="STR_MISSION_TITLE">
-            <Original>CTI 34 KP Liberation v0.96.7a</Original>
+            <Original>KP Liberation UN EDITION</Original>
         </Key>
         <Key ID="STR_MISSION_VERSION">
             <Original>v0.96.7a</Original>
@@ -7359,7 +7359,7 @@
             <Spanish>Menú de Jugador KP v1.0.2\npor Wyqer</Spanish>
             <Czech>KP Player Menu v1.0.2\nby Wyqer</Czech>
         </Key>
-		
+
 		<Key ID="STR_SECONDARY_MISSION3">
             <Original>Humanitarian Aid</Original>
             <French>Recherche et Sauvetage</French>

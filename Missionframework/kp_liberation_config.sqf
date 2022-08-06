@@ -107,9 +107,9 @@ If you want to change a preset, it's recommended to set all four presets to 0 an
 26 = CUP Sahrani Liberation Army
 27 = CUP Takistani Army
 28 = SFP (Woodland)
-29 = SFP (Desert)
+29 = United Nations
 30 = LDF (Contact DLC) */
-KP_liberation_preset_blufor = 0;
+KP_liberation_preset_blufor = 29;
 
 /* OPFOR preset:
 0  = Custom (default vanilla CSAT)
@@ -180,11 +180,11 @@ KP_liberation_arsenal = 0;
 
 /* - Fuel consumption settings.
 Time in minutes till a full tank depletes whilst the vehicle is standing still with a running engine. */
-KP_liberation_fuel_neutral = 180;
+KP_liberation_fuel_neutral = 240;
 // Time in minutes till a full tank depletes whilst the vehicle is driving below max speed.
-KP_liberation_fuel_normal = 90;
+KP_liberation_fuel_normal = 120;
 // Time in minutes till a full tank depletes whilst the vehicle is driving at max speed.
-KP_liberation_fuel_max = 45;
+KP_liberation_fuel_max = 60;
 
 /* - Gameplay constant settings.
 Name of the savegame namespace inside of the [ServerProfileName].vars.Arma3Profile file. */
@@ -230,16 +230,16 @@ KP_liberation_cr_kill_penalty = 5;                                      // Civil
 KP_liberation_cr_building_penalty = 3;                                  // Civil Reputation penalty for destroying/damaging a building.
 KP_liberation_cr_vehicle_penalty = 2;                                   // Civil Reputation penalty for stealing a civilian vehicle.
 KP_liberation_cr_resistance_penalty = 3;                                // Civil Reputation penalty for killing a friendly resistance soldier.
-KP_liberation_cr_sector_gain = 5;                                       // Civil Reputation gain for liberate a sector.
-KP_liberation_cr_wounded_chance = 35;                                   // Chance (0-100) that there are wounded civilians right after capturing a sector.
-KP_liberation_cr_wounded_gain = 2;                                      // Civil Reputation gain for providing medical assistance for wounded civilians.
+KP_liberation_cr_sector_gain = 10;                                       // Civil Reputation gain for liberate a sector.
+KP_liberation_cr_wounded_chance = 55;                                   // Chance (0-100) that there are wounded civilians right after capturing a sector.
+KP_liberation_cr_wounded_gain = 4;                                      // Civil Reputation gain for providing medical assistance for wounded civilians.
 
-KP_liberation_civinfo_min = 5400;                                       // Civil Informant minimum spawn time. (seconds)
+KP_liberation_civinfo_min = 3600;                                       // Civil Informant minimum spawn time. (seconds)
 KP_liberation_civinfo_max = 10800;                                      // Civil Informant maximum spawn time. (seconds)
 KP_liberation_civinfo_chance = 75;                                      // Civil Informant spawn chance. (0-100)
 KP_liberation_civinfo_intel = 5;                                        // Civil Informant intel amount.
 KP_liberation_civinfo_duration = 1200;                                  // Civil Informant staytime until despawning. (seconds)
-KP_liberation_civinfo_task_chance = 40;                                 // Chance (0-100) that the delivered informant will spawn a time critical task.
+KP_liberation_civinfo_task_chance = 60;                                 // Chance (0-100) that the delivered informant will spawn a time critical task.
 KP_liberation_civinfo_task_duration = 900;                              // Duration until the task will despawn if no player is near. (seconds)
 
 KP_liberation_convoy_ambush_chance = 2;                                 // Chance that a logistic convoy will be ambushed, when civil reputation is low.
@@ -248,8 +248,8 @@ KP_liberation_convoy_ambush_duration = 1200;                            // Durat
 KP_liberation_resistance_tier2 = 30;                                    // At which strength (0-100) the guerilla forces will be at tier 2?
 KP_liberation_resistance_tier3 = 70;                                    // At which strength (0-100) the guerilla forces will be at tier 3?
 KP_liberation_resistance_at_chance = 20;                                // Chance that a guerilla unit has a RPG. (tier 2 and 3)
-KP_liberation_resistance_sector_chance = 35;                            // Chance that a guerilla squad will join an ongoing sector attack.
-KP_liberation_resistance_ambush_chance = 25;                            // Chance that some guerilla units will spawn in blufor sectors for an ambush, if reputation is low.
+KP_liberation_resistance_sector_chance = 55;                            // Chance that a guerilla squad will join an ongoing sector attack.
+KP_liberation_resistance_ambush_chance = 35;                            // Chance that some guerilla units will spawn in blufor sectors for an ambush, if reputation is low.
 
 // Array of worldName values.
 // When playing on this map, it'll create a clearance (remove terrain objects) in a 15m radius around the battlegroup/reinforcements spawnpoint.
@@ -383,30 +383,17 @@ blacklisted_from_arsenal = [
     "O_UGV_02_Science_backpack_F",
     "RHS_AGS30_Gun_Bag",
     "RHS_AGS30_Tripod_Bag",
-    "RHS_DShkM_Gun_Bag",
-    "RHS_DShkM_TripodHigh_Bag",
-    "RHS_DShkM_TripodLow_Bag",
     "RHS_Kord_Gun_Bag",
     "RHS_Kord_Tripod_Bag",
-    "RHS_Kornet_Gun_Bag",
-    "RHS_Kornet_Tripod_Bag",
     "RHS_M2_Gun_Bag",
     "RHS_M2_MiniTripod_Bag",
     "RHS_M2_Tripod_Bag",
     "rhs_M252_Bipod_Bag",
     "rhs_M252_Gun_Bag",
-    "RHS_Metis_Gun_Bag",
-    "RHS_Metis_Tripod_Bag",
     "RHS_Mk19_Gun_Bag",
     "RHS_Mk19_Tripod_Bag",
     "RHS_NSV_Gun_Bag",
     "RHS_NSV_Tripod_Bag",
-    "RHS_Podnos_Bipod_Bag",
-    "RHS_Podnos_Gun_Bag",
-    "RHS_SPG9_Gun_Bag",
-    "RHS_SPG9_Tripod_Bag",
-    "rhs_Tow_Gun_Bag",
-    "rhs_TOW_Tripod_Bag",
     "UK3CB_BAF_L111A1",
     "UK3CB_BAF_L134A1",
     "UK3CB_BAF_L16_Tripod",
@@ -546,6 +533,7 @@ KPLIB_transportConfigs = [
     ["B_T_Truck_01_covered_F", -6.5, [0,-0.4,0.4], [0,-2.1,0.4], [0,-3.8,0.4]],
     ["B_T_Truck_01_flatbed_F", -6.5, [0,-0.4,0.4], [0,-2.1,0.4], [0,-3.8,0.4]],
     ["B_T_Truck_01_transport_F", -6.5, [0,-0.4,0.4], [0,-2.1,0.4], [0,-3.8,0.4]],
+    ["B_UN_Truck_01_transport_lxWS", -6.5, [0,-0.4,0.4], [0,-2.1,0.4], [0,-3.8,0.4]],
     ["B_T_VTOL_01_infantry_F", -7.5,[0,4.7,-4.88],[0,3,-4.88],[0,1.3,-4.88],[0,-0.4,-4.88],[0,-2.1,-4.88]],
     ["B_T_VTOL_01_vehicle_F", -7.5,[0,4.7,-4.88],[0,3,-4.88],[0,1.3,-4.88],[0,-0.4,-4.88],[0,-2.1,-4.88]],
     ["B_Truck_01_cargo_F", -6.5, [0,-0.4,0.4], [0,-2.1,0.4], [0,-3.8,0.4]],
@@ -703,6 +691,8 @@ KPLIB_transportConfigs = [
     ["USAF_C17",-10,[-1.2,14.4,-0.43],[-1.2,12.8,-0.43],[-1.2,11.1,-0.43],[-1.2,9.5,-0.43],[-1.2,7.9,-0.43],[-1.2,6.3,-0.43],[-1.2,4.6,-0.43],[-1.2,3,-0.43],[-1.2,1.4,-0.43],[-1.2,-0.1,-0.43],[-1.2,-1.8,-0.43],[1.2,14.4,-0.43],[1.2,12.8,-0.43],[1.2,11.2,-0.43],[1.2,9.6,-0.43],[1.2,7.9,-0.43],[1.2,6.3,-0.43],[1.2,4.7,-0.43],[1.2,3.1,-0.43],[1.2,1.5,-0.43],[1.2,0,-0.43],[1.2,-1.7,-0.43],[-1.2,14.5,1.22],[-1.2,12.8,1.22],[-1.2,11.2,1.2],[-1.2,9.5,1.22],[-1.2,7.9,1.22],[-1.2,6.3,1.22],[-1.2,4.7,1.22],[-1.2,3,1.22],[-1.2,1.4,1.22],[-1.2,-0.1,1.22],[-1.2,-1.7,1.22],[1.2,14.5,1.22],[1.2,12.8,1.22],[1.2,11.2,1.22],[1.2,9.6,1.22],[1.2,8,1.22],[1.2,6.3,1.22],[1.2,4.7,1.22],[1.2,3.1,1.22],[1.2,1.5,1.22],[1.2,0,1.22],[1.2,-1.6,1.22]],
     ["USAF_C130J",-10,[0,3.6,2.08],[0,2,2.08],[0,0.3,2.08],[0,-1.3,2.08]],
     ["USAF_C130J_Cargo",-10,[0,3.6,2.08],[0,2,2.08],[0,0.3,2.08],[0,-1.3,2.08],[0,5.3,2.08],[0,7,2.08]],
+    ["UK3CB_UN_B_C130J",-10,[0,3.6,2.08],[0,2,2.08],[0,0.3,2.08],[0,-1.3,2.08]],
+    ["UK3CB_UN_B_C130J_CARGO",-10,[0,3.6,2.08],[0,2,2.08],[0,0.3,2.08],[0,-1.3,2.08],[0,5.3,2.08],[0,7,2.08]],
     ["uns_M35A2_Open", -5, [0,-0.6,0.1], [0,-2.3,0.1]],
     ["uns_M35A2", -5, [0,-0.6,0.1], [0,-2.3,0.1]],
     ["uns_m37b1", -5, [0,-1.8,0.15]],
@@ -715,6 +705,7 @@ KPLIB_transportConfigs = [
 Everything the AI troups should be able to resupply from. */
 KPLIB_aiResupplySources = [
     "B_APC_Tracked_01_CRV_F",
+    "B_UN_Truck_01_ammo_lxWS",
     "B_Slingload_01_Ammo_F",
     "B_T_APC_Tracked_01_CRV_F",
     "B_T_Truck_01_ammo_F",
@@ -758,6 +749,7 @@ KPLIB_aiResupplySources = [
 // Everything that can resupply other vehicles.
 vehicle_repair_sources = [
     "B_APC_Tracked_01_CRV_F",
+    "B_UN_Truck_01_Repair_lxWS",
     "B_Slingload_01_Repair_F",
     "B_T_APC_Tracked_01_CRV_F",
     "B_T_Truck_01_Repair_F",
@@ -802,6 +794,7 @@ vehicle_rearm_sources = [
     "B_APC_Tracked_01_CRV_F",
     "B_Slingload_01_Ammo_F",
     "B_T_APC_Tracked_01_CRV_F",
+    "B_UN_Truck_01_ammo_lxWS",
     "B_T_Truck_01_ammo_F",
     "B_Truck_01_ammo_F",
     "BW_LKW15T_Ammo_F",
@@ -842,6 +835,7 @@ vehicle_rearm_sources = [
 vehicle_refuel_sources = [
     "B_APC_Tracked_01_CRV_F",
     "B_Slingload_01_Fuel_F",
+    "B_UN_Truck_01_fuel_lxWS",
     "B_T_APC_Tracked_01_CRV_F",
     "B_T_Truck_01_fuel_F",
     "B_Truck_01_fuel_F",
@@ -1030,7 +1024,9 @@ KP_liberation_suppMod_artyVeh = [
     "uns_M2_60mm_mortar_pvp",
     "uns_M2_60mm_mortar",
     "uns_M30_107mm_mortar",
-    "uns_Type55_mortar"
+    "uns_Type55_mortar",
+    "UK3CB_UN_B_D30",
+    "gm_ge_army_kat1_463_mlrs"
 ];
 
 // Objects which are spawned as intel objects for pickup
