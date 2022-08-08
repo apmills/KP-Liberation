@@ -2,7 +2,15 @@
 
 
 ## 0.adam.0 (2022)
-* Tweaked: CUP BAF Desert preset, made AI squads free for SP
+* Tweaked CUP BAF Desert preset
+* Made AI squads free for SP
+* Added AIS integration (turn off built-in revive system)
+* Replaced SFP desert preset with a United Nations one
+* Zeus now should have access to all add ons
+* Custom civilian preset is now 3CB Factions Takistan civvies
+* Custom resistance preset is now 3CB Factions Kargezhan (sp?)
+* Custom opfor preset is now 3CB Factions Ardistan
+* Added Humanitarian Aid secondary objective
 
 ## 0.96.7a (2020-09-12)
 * Added: Contact DLC static weapon backpacks to default blacklist.
